@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guide for anything</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		function horizontal(element){
+			var num = element.value;
+			document.getElementById('emoji').style.top =""+num+"px";
+		}
+		function vertical(element){
+			var num = element.value;
+			document.getElementById('emoji').style.left =""+num+"px";
+		}	
+	</script>
+	
+</head>
+<body>
+	<!-- Manipulate position in javascript-->
+	<span id="emoji"><h1>ME</h1></span>
+	<input type="number" placeholder="Horizontal Motion" onchange="horizontal(this)">
+	<input type="number" placeholder="Vertical Motion" onchange="vertical(this)">
+</body>
+</html>
